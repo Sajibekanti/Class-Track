@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Class Track</title>
+    <script type="text/javascript" src="./app.js"></script>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- Bootstrap 3.3.2 -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="./dist/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Theme style -->
+    <link href="./dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins 
+         folder instead of downloading all of them to reduce the load. -->
+    <link href="./dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+   <body class="fixed skin-purple sidebar-collapse">
+    <div class="wrapper">   
+      <header class="main-header">  
+        <a href="index.html" class="hidden-xs logo"><b style="color:#ffe;">Class</b>Track</a>        
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+
+          </a>
+
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="./day.html">
+                  <i class="fa fa-table"></i>
+                </a>
+              </li>
+              <li>
+                <a href="./examview.html">
+                  <i class="fa fa-graduation-cap"></i>
+                </a>
+              </li>
+              <li>
+                <a href="./help.html">
+                  <i class="fa fa-ambulance"></i>
+                </a>
+              </li>
+
+              <li class="dropdown user user-menu">
+                <a href="./index.html" class="hidden-md hidden-sm hidden-lg navbar-brand"><b>Class</b>Track</a>  
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+       <aside class="main-sidebar">
+<section class="sidebar">
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="dist/img/class_poll.png" class="img-circle" alt="User Image" />
+            </div>
+            <div class="pull-left info">
+              <p>Class Track</p>
+              <a href="#"><i class="fa fa-circle text-success"></i>Daily  Companion</a>
+            </div>
+          </div>
+  <ul class="sidebar-menu">
+      <li class="header">Class Track Menu</li>
+            <li class="treeview">
+              <a href="./index.html">
+                <i class="fa fa-home"></i> <span>Home</span>
+              </a>
+            </li>
+            <li class="active treeview">
+              <a href="#">
+                <i class="fa fa-book"></i> <span>Subject</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li class="active"><a href="./sub.html"><i class="fa fa-plus"></i>Add</a></li>
+                <li><a href="./subview.html"><i class="fa fa-eye"></i>View</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-university"></i> <span>Class</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="./cls.html"><i class="fa fa-plus"></i>Add</a></li>
+                <li><a href="./clsview.html"><i class="fa fa-eye"></i>View</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-tasks"></i> <span>Assignment</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="./ass.html"><i class="fa fa-plus"></i>Add</a></li>
+                <li><a href="./assview.html"><i class="fa fa-eye"></i>View</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-graduation-cap"></i> <span>Exam</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="./exam.html"><i class="fa fa-plus"></i>Add</a></li>
+                <li><a href="./examview.html"><i class="fa fa-eye"></i>View</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-briefcase"></i> <span>Meeting</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="./meet.html"><i class="fa fa-plus"></i>Add</a></li>
+                <li><a href="./meetview.html"><i class="fa fa-eye"></i>View</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="./help.html">
+                <i class="fa fa-ambulance"></i> <span>Help</span>
+              </a>
+            </li>
+            <li class="treeview">
+              <a href="./about.html">
+                <i class="fa fa-user-secret"></i> <span>Publisher</span>
+              </a>
+            </li>
+  </ul>
+</section>
+</aside>
+
+      <!-- =============================================== -->
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            ADD Subject
+            <div class="box-tools pull-right">
+              <a href="./subview.html"><button class="btn  bg-maroon btn-xs">View all</button></a>
+            </div>
+            <small>which you want to memorize...</small>
+          </h1>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+          <div id="notis">
+          </div>
+
+          <input id="id" hidden>
+          <div id="1div" class="form-group">
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title" for="subjecttitle">Subject Name</h3>
+                <div class="box-tools pull-right">
+                  <!-- Buttons, labels, and many other things can be placed here! -->
+                  <!-- Here is a label for example -->
+                  <!-- <span class="label label-danger">Require</span> -->
+                </div><!-- /.box-tools -->
+              </div><!-- /.box-header -->
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-book"></i></span>
+                   <input id="subjecttitle" class="form-control input-lg" type="text" placeholder="C Programming">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title">Subject Code</h3>
+                <div class="box-tools pull-right">
+                  <!-- Buttons, labels, and many other things can be placed here! -->
+                  <!-- Here is a label for example -->
+                  <!-- <span class="label label-primary">Label</span> -->
+                </div><!-- /.box-tools -->
+              </div><!-- /.box-header -->
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-info-circle"></i></span>
+                   <input id="subjectcode" class="form-control input-lg" type="text" placeholder="CSE 6622 ">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title">Professor Name <small>(ShortName)</small></h3>
+                <div class="box-tools pull-right">
+                  <!-- Buttons, labels, and many other things can be placed here! -->
+                  <!-- Here is a label for example -->
+                  <!-- <span class="label label-primary">Label</span> -->
+                </div><!-- /.box-tools -->
+              </div><!-- /.box-header -->
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
+                   <input id="pname" class="form-control input-lg" type="text" placeholder="Sajibe Kanti (SK)">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title">Professor Phone Number</h3>
+                <div class="box-tools pull-right">
+                  <!-- Buttons, labels, and many other things can be placed here! -->
+                  <!-- Here is a label for example -->
+                  <!-- <span class="label label-primary">Label</span> -->
+                </div><!-- /.box-tools -->
+              </div><!-- /.box-header -->
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                   <input id="phonenumber" class="form-control phone input-lg" type="text">
+              </div>
+            </div>
+          </div>
+
+          <center>
+            <button id="clearsubject" class="btn  btn-primary btn-lg">Clear</button>
+            <button id="savesubject" class="btn  btn-success btn-lg">Submit</button>
+          </center> 
+
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+    </div><!-- ./wrapper -->
+
+    <!-- jQuery 2.1.3 -->
+    <script src="./plugins/jQuery/jQuery-2.1.3.min.js"></script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="./bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- InputMask -->
+    <script src="./plugins/input-mask/jquery.inputmask.js" type="text/javascript"></script>
+    <script src="./plugins/input-mask/jquery.inputmask.date.extensions.js" type="text/javascript"></script>
+    <script src="./plugins/input-mask/jquery.inputmask.extensions.js" type="text/javascript"></script>
+    <!-- date-range-picker -->
+    <script src="./plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+    <!-- bootstrap time picker -->
+    <script src="./plugins/timepicker/bootstrap-timepicker.min.js" type="text/javascript"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="./plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <!-- iCheck 1.0.1 -->
+    <script src="./plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+    <!-- FastClick -->
+    <script src='./plugins/fastclick/fastclick.min.js'></script>
+    <!-- AdminLTE App -->
+    <script src="./dist/js/app.min.js" type="text/javascript"></script>
+
+     <script type="text/javascript">
+      $(function () {
+        //Datemask dd/mm/yyyy
+        $(".phone").inputmask("09999999999", {"placeholder": "###########"});
+       
+      });
+    </script>
+    <script type="text/javascript">
+      getvalue();
+
+    </script>
+  </body>
+</html>
